@@ -1,1 +1,1 @@
-AddImage new
+AddImage AddImage
