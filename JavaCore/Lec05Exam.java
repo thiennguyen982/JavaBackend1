@@ -11,9 +11,13 @@ public class Lec05Exam {
         } else if (num == 2){
             return true;
         } else if (num > 2){
-            for (int i = 2; i < num - 1; i++) {
-                if (num % i ==0) {
-                    return false;
+            if (num % 2 == 0) {
+                return false;
+            } else {
+                for (int i = 3; i < num/2 + 1; i += 2) {
+                    if (num % i == 0) {
+                        return false;
+                    }
                 }
             }
         }
@@ -57,7 +61,7 @@ public class Lec05Exam {
         int num = scanner.nextInt();
         long arr[] = new long[num];
         for (int i = 0; i < arr.length; i++) {
-            arr[i] = Math.round(Math.random()*108);
+            arr[i] = Math.round(Math.random()*1080000);
         }
 
         // A. Xuat ra cac phan tu cua mang
